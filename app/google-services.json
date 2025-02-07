@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "177443678382",
+    "project_id": "shiftmanagerapp-41810",
+    "storage_bucket": "shiftmanagerapp-41810.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:177443678382:android:e3e79eeb4d9171e2d3a53f",
+        "android_client_info": {
+          "package_name": "com.example.shiftmanagerapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQn2Ak9u1Z1IRRKk2bIQm4le0D7nMhkgI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
