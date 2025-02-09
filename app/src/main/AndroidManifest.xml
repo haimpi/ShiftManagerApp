@@ -31,5 +31,7 @@
             android:name=".HomeActivity"
             android:exported="false" />
 
+        <activity android:name=".AddWorkerActivity"></activity>
+
     </application> <!-- ✅ וודא שהתווית הזו קיימת כדי לסגור את ה-<application> -->
 </manifest>
