@@ -1,59 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/background_fancy">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
+    <LinearLayout
+        android:id="@+id/custom_header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        android:title="Worker Schedule"
-        android:titleTextColor="@android:color/black"
-        app:titleTextAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+        android:background="@drawable/header_background"
+        android:padding="16dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:elevation="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Worker Schedule"
+            android:textSize="22sp"
+            android:textColor="@android:color/white"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:id="@+id/adminPanelLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginEnd="16dp">
+
+            <ImageView
+                android:id="@+id/btn_admin_panel"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_admin_panel"
+                android:contentDescription="Admin Panel"
+                android:padding="10dp"
+                android:background="@drawable/button_fancy_background"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Admin Panel"
+                android:textSize="12sp"
+                android:textColor="@android:color/white"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginEnd="16dp">
+
+            <ImageView
+                android:id="@+id/btn_submit_shift"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_submit_shift"
+                android:contentDescription="Submit Shift"
+                android:padding="10dp"
+                android:background="@drawable/button_fancy_background"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit Shift"
+                android:textSize="12sp"
+                android:textColor="@android:color/white"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/btn_logout"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_logout"
+                android:contentDescription="Logout"
+                android:padding="10dp"
+                android:background="@drawable/button_fancy_background"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:textSize="12sp"
+                android:textColor="@android:color/white"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="20dp">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingStart="28dp"
+        android:paddingEnd="28dp"
+        android:gravity="center_vertical">
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical">
+            android:text="Welcome,"
+            android:textSize="20sp"
+            android:textColor="#B0BEC5"
+            android:fontFamily="sans-serif-light"
+            android:paddingEnd="8dp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Welcome,"
-                android:textSize="18sp"
-                android:padding="10dp"
-                android:gravity="center_vertical"
-                android:textColor="@android:color/black" />
-
-            <TextView
-                android:id="@+id/tvWorkerName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Worker name"
-                android:textSize="18sp"
-                android:padding="10dp"
-                android:gravity="center_vertical"
-                android:textColor="@android:color/black" />
-
-        </LinearLayout>
-
-
-        <CalendarView
-            android:id="@+id/calendarView"
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/tvWorkerName"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"/>
-
+            android:text="User"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="bold"/>
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:background="@drawable/calendar_card_background"
+        android:elevation="12dp"
+        android:orientation="vertical">
+
+        <com.applandeo.materialcalendarview.CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"/>
+
+    </LinearLayout>
 </LinearLayout>

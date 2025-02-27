@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ShiftManagerApp</string>
+    <string name="worker_role_prompt">Select Role</string>
 </resources>

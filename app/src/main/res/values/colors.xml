@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="primary_color">#007AFF</color> <!-- כחול מודרני -->
+    <color name="light_gray">#F5F5F5</color> <!-- רקע בהיר -->
+    <color name="gray">#CCCCCC</color> <!-- קו הפרדה אפור -->
+    <color name="black">#212121</color> <!-- שחור כהה יותר -->
+    <color name="background_light">#F5F5F5</color>
+    <color name="primary">#6200EE</color>
+    <color name="colorPrimary">#0288D1</color>
+    <color name="colorPrimaryDark">#0277BD</color>
+    <color name="colorAccent">#FFD700</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_hint">#757575</color>
 </resources>

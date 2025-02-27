@@ -44,4 +44,5 @@ dependencies {
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
     implementation("com.google.firebase:firebase-auth:22.2.0")
+    implementation("com.applandeo:material-calendar-view:1.9.2")
 }
